@@ -1,6 +1,0 @@
-%%contains VAR:zimbraServiceEnabled cbpolicyd^ check_policy_service inet:localhost:%%zimbraCBPolicydBindPort%%%%
-%%contains VAR:zimbraServiceEnabled antivirus^ check_sender_access regexp:/opt/zimbra/postfix/conf/tag_as_originating.re%%
-%%contains VAR:zimbraServiceEnabled antivirus^ permit_mynetworks%%
-%%contains VAR:zimbraServiceEnabled antivirus^ permit_sasl_authenticated%%
-%%contains VAR:zimbraServiceEnabled antivirus^ permit_tls_clientcerts%%
-%%contains VAR:zimbraServiceEnabled antivirus^ check_sender_access regexp:/opt/zimbra/postfix/conf/tag_as_foreign.re%%
