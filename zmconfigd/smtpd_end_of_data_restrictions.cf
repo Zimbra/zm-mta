@@ -1,1 +1,1 @@
-check_policy_service inet:localhost:%%zimbraCBPolicydBindPort%%
+check_policy_service inet:localhost:@@cbpolicyd_bind_port@@

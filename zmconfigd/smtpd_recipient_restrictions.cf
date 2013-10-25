@@ -1,4 +1,4 @@
-%%contains VAR:zimbraServiceEnabled cbpolicyd^ check_policy_service inet:localhost:%%zimbraCBPolicydBindPort%%%%
+%%contains VAR:zimbraServiceEnabled cbpolicyd^ check_policy_service inet:localhost:@@cbpolicyd_bind_port@@%%
 reject_non_fqdn_recipient
 permit_sasl_authenticated
 permit_mynetworks
@@ -15,6 +15,4 @@ reject_unlisted_recipient
 %%explode reject_rhsbl_reverse_client VAR:zimbraMtaRestrictionRHSBLRCs%%
 %%explode reject_rhsbl_sender VAR:zimbraMtaRestrictionRHSBLSs%%
 %%contains VAR:zimbraMtaRestriction check_policy_service unix:private/policy%%
-%%contains VAR:zimbraMtaRestriction check_recipient_access ldap:/opt/zimbra/conf/ldap-splitdomain.cf%%
-%%contains VAR:zimbraMtaRestriction reject%%
 permit
