@@ -1,3 +1,4 @@
+%%contains VAR:zimbraMtaRestriction check_client_access lmdb:/opt/zimbra/conf/postfix_blacklist%%
 %%contains VAR:zimbraServiceEnabled cbpolicyd^ check_policy_service inet:localhost:%%zimbraCBPolicydBindPort%%%%
 reject_non_fqdn_recipient
 permit_sasl_authenticated
