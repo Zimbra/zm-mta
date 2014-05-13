@@ -4,4 +4,4 @@
 permit_mynetworks
 permit_sasl_authenticated
 permit_tls_clientcerts
-%%contains VAR:zimbraServiceEnabled amavis^check_sender_access regexp:/opt/zimbra/postfix/conf/tag_as_foreign.re%%
+%%contains VAR:zimbraServiceEnabled amavis^ check_sender_access regexp:/opt/zimbra/postfix/conf/tag_as_foreign.re%%
