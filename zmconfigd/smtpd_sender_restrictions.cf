@@ -1,5 +1,5 @@
 %%exact VAR:zimbraMtaSmtpdSenderRestrictions reject_authenticated_sender_login_mismatch%%
-%%exact VAR:zimbraMtaSmtpdSenderRestrictions check_sender_access lmdb:/opt/zimbra/conf/postfix_reject_sender%%
+%%contains VAR:zimbraMtaSmtpdSenderRestrictions check_sender_access lmdb:/opt/zimbra/conf/postfix_reject_sender%%
 %%contains VAR:zimbraServiceEnabled cbpolicyd^ check_policy_service inet:localhost:%%zimbraCBPolicydBindPort%%%%
 %%contains VAR:zimbraServiceEnabled amavis^ check_sender_access regexp:/opt/zimbra/postfix/conf/tag_as_originating.re%%
 permit_mynetworks
