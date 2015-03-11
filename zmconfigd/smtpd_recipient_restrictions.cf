@@ -14,6 +14,7 @@ reject_unlisted_recipient
 %%exact VAR:zimbraMtaRestriction reject_unverified_recipient%%
 %%contains VAR:zimbraMtaRestriction check_recipient_access lmdb:/opt/zimbra/conf/postfix_recipient_access%%
 %%contains VAR:zimbraMtaRestriction check_client_access lmdb:/opt/zimbra/conf/postfix_rbl_override%%
+%%contains VAR:zimbraMtaRestriction check_reverse_client_hostname_access pcre:/opt/zimbra/conf/fqrdns.pcre%%
 %%explode reject_rbl_client VAR:zimbraMtaRestrictionRBLs%%
 %%explode reject_rhsbl_client VAR:zimbraMtaRestrictionRHSBLCs%%
 %%explode reject_rhsbl_reverse_client VAR:zimbraMtaRestrictionRHSBLRCs%%
