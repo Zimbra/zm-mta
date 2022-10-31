@@ -430,8 +430,7 @@ User zimbra
 
 # Mark encrypted archives as viruses (Encrypted.Zip, Encrypted.RAR).
 # Default: no
-%%uncomment VAR:zimbraVirusBlockEncryptedArchive%%ArchiveBlockEncrypted yes
-
+%%uncomment VAR:zimbraVirusBlockEncryptedArchive%%AlertEncrypted yes
 
 ##
 ## Limits
